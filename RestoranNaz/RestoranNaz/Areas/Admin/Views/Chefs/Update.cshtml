@@ -1,0 +1,35 @@
+﻿@using Core.Models;
+@model Chef
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">FullName</label>
+        <input asp-for="FullName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <span asp-validation-for="FullName"></span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Designation</label>
+        <input asp-for="Designation" class="form-control" id="exampleInputPassword1">
+        <span asp-validation-for="Designation"></span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">FbLink</label>
+        <input asp-for="FbLink" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <span asp-validation-for="FbLink"></span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">XLink</label>
+        <input asp-for="XLink" class="form-control" id="exampleInputPassword1">
+        <span asp-validation-for="XLink"></span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">IgLink</label>
+        <input asp-for="IgLink" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <span asp-validation-for="IgLink"></span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">ImageFile</label>
+        <input asp-for="ImageFile" type="file" class="form-control" id="exampleInputPassword1">
+        <span asp-validation-for="ImageFile"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
